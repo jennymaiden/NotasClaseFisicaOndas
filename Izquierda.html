@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+var a,b,c,d,e,f;
+var cont=0;
+a=b=c=d=e=f=g=0;
+function mostrarycerrardiv(idElemento,x) 
+{
+	
+	if(x==1)
+	{
+		cerrar('_Introduccion');
+		if(a==0)
+		{
+			b=c=d=e=f=g=0;
+			cerrar('_Introduccion');a=1;
+		}
+		else
+		{
+			cerrart('_Introduccion');a=0;
+		}
+	}
+	if(x==2)
+	{	
+		cerrar('unidimensional');
+		if(b==0)
+		{
+			a=c=d=e=f=g=0;
+			cerrar('unidimensional');b=1;
+		}
+		else
+		{
+			cerrart('unidimensional');b=0;
+		}
+	}
+	if(x==3)
+	{
+		cerrar('movimiento2dimensiones');
+		if(c==0)
+		{
+			a=b=d=e=f=g=0;
+			cerrar('movimiento2dimensiones');c=1;
+		}
+		else{
+			cerrart('movimiento2dimensiones');c=0;
+		}
+	}
+	if(x==4)
+	{
+		cerrar('leyNewton');
+		if(d==0)
+		{
+			a=b=c=e=f=g=0;
+			cerrar('leyNewton');d=1
+		}
+		else{
+			cerrart('leyNewton');d=0;
+			}
+	}
+	if(x==5)
+	{
+		cerrar('tyenergia');
+		if(e==0)
+		{
+			a=b=c=d=f=g=0;
+			cerrar('tyenergia');e=1;
+		}
+		else{
+			cerrart('tyenergia');e=0;
+			}
+	}
+	if(x==6)
+	{
+		cerrar('_momentum');
+		if(f==0)
+		{
+			a=b=c=d=e=g=0;
+		cerrar('_momentum');f=1;
+		}
+		else{
+			cerrart('_momentum');f=0;
+			}
+	}
+	if(x==7)
+	{
+		cerrar('seminarios');
+		if(g==0)
+		{
+			a=b=c=d=e=f=0;
+			cerrar('seminarios');g=1;
+		}
+		else{
+			cerrart('seminarios');g=0;
+			}
+	}
+}
+function cerrar(idElemento){
+	if(idElemento == '_Introduccion'){
+		cerrart('unidimensional');
+		cerrart('movimiento2dimensiones');
+		cerrart('leyNewton');
+		cerrart('tyenergia');
+		cerrart('_momentum');
+		cerrart('seminarios');
+		abrirt('_Introduccion');
+		}
+	if(idElemento == 'unidimensional'){
+		cerrart('_Introduccion');
+		cerrart('movimiento2dimensiones');
+		cerrart('leyNewton');
+		cerrart('tyenergia');
+		cerrart('_momentum');
+		cerrart('seminarios');
+		abrirt('unidimensional');
+		}
+	if(idElemento == 'movimiento2dimensiones'){
+		cerrart('unidimensional');
+		cerrart('_Introduccion');
+		cerrart('leyNewton');
+		cerrart('tyenergia');
+		cerrart('_momentum');
+		cerrart('seminarios');
+		abrirt('movimiento2dimensiones');
+		}
+	if(idElemento == 'leyNewton'){
+		cerrart('unidimensional');
+		cerrart('_Introduccion');
+		cerrart('movimiento2dimensiones');
+		cerrart('tyenergia');
+		cerrart('_momentum');
+		cerrart('seminarios');
+		abrirt('leyNewton');
+		
+		}
+	if(idElemento == 'tyenergia'){
+		cerrart('unidimensional');
+		cerrart('_Introduccion');
+		cerrart('_momentum');
+		cerrart('movimiento2dimensiones');
+		cerrart('leyNewton');
+		cerrart('seminarios');
+		abrirt('tyenergia');
+		}
+	if(idElemento == '_momentum'){
+		cerrart('unidimensional');
+		cerrart('leyNewton');
+		cerrart('movimiento2dimensiones');
+		cerrart('_Introduccion');
+		cerrart('tyenergia');
+		cerrart('seminarios');
+		abrirt('_momentum');
+		}
+		if(idElemento == 'seminarios'){
+			cerrart('unidimensional');
+			cerrart('leyNewton');
+			cerrart('movimiento2dimensiones');
+			cerrart('_Introduccion');
+			cerrart('tyenergia');
+			cerrart('_momentum');
+			abrirt('seminarios');
+			}
+	}
+function abrirt(idElemento){
+		div = document.getElementById(idElemento);
+		div.style.display = '';
+	}
+function cerrart(idElemento) {
+		div = document.getElementById(idElemento);
+		div.style.display='none';
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<link href="Estilo.css" rel="stylesheet" type="	text/css" />
+</head>
+
+
+<body><center>
+<a href="Principal.html" target="mainFrame" >
+<img src="Escudoprincipal.png" width="232" height="206" alt="Principal" />
+
+</a>
+</center>
+</div>
+<div id="introduccion" class="introduccion" style="margin-top:20px">
+<a href="javascript:mostrarycerrardiv('_Introduccion',1);">
+<h1>INTRODUCCIÓN</h1></a>
+
+</div>
+<div id="_Introduccion" style="display:none " class="contenido">
+<!--<a href="Principal.html" target="mainFrame" class="introduccion_color">
+Inicio</a><br />-->
+<!--<a href="introduccion/historia_fisica.html" target="mainFrame" class="introduccion_color">Historia física</a><br />
+-->
+<a href="Principal.html" target="mainFrame" class="introduccion_color">•¿Que es la física?</a><br />
+<a href="introduccion/MetodoCientifico.html" target="mainFrame" class="introduccion_color">•Método científico</a><br />
+<a href="introduccion/patrones_de_medida.html" target="mainFrame" class="introduccion_color">•Patrones de medida</a><br />
+<a href="introduccion/ConversionUnidades.htm" target="mainFrame" class="introduccion_color">•Conversión de unidades</a><br />
+<a href="introduccion/analisis_dimensional.html" target="mainFrame" class="introduccion_color">•Análisis dimensional</a><br />
+<a href="introduccion/CifrasSignificativas.html" target="mainFrame" class="introduccion_color">•Cifras Significativas</a><br />
+<a href="introduccion/Sistemas_de_coordenadas.html" target="mainFrame" class="introduccion_color">•Sistemas de coordenadas</a><br />
+<a href="introduccion/vectores.html" target="mainFrame" class="introduccion_color">•Vectores</a><br />
+<!--<a href="introduccion/Notacion_cientifica.html" target="mainFrame" class="introduccion_color">Notación científica</a><br />-->
+<!--<a href="introduccion/Trigonometriayalgebra.html" target="mainFrame" class="introduccion_color">Trigonometría y algebra</a><br />-->
+<!--<a href="introduccion/CalculoDiferencial.html" target="mainFrame" class="introduccion_color">Cálculo diferencial</a><br>-->
+<!--<p class="derecha" > <a href="javascript:cerrart('_Introduccion');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br><br>
+</div>
+
+<!-- INTRODUCCIÓN-->
+
+
+
+<!-- MOVIMIENTO EN UNA DIMENSIÓN-->
+<div id="movimiento_U" class="unidimensional">
+<a href="javascript:mostrarycerrardiv('unidimensional',2);">
+<h1>MOVIMIENTO EN UNA DIMENSIÓN</h1></a>
+</div>
+<div id="unidimensional" style="display:none " class="contenido">
+
+<a href="Unidimensional/Cinematica.html" target="mainFrame" class="unidimensional_color">•Cinemática</a><br />
+<a href="Unidimensional/Aceleracionpromedioeinstantanea.html" target="mainFrame" class="unidimensional_color">•Aceleración promedio e instantánea</a><br />
+<a href="Unidimensional/Movimientoaceleracionconstante.html" target="mainFrame" class="unidimensional_color">•Aceleración constante y caída libre</a>
+<!--<p class="derecha" > <a href="javascript:cerrart('unidimensional');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br><br>
+</div>
+<!-- MOVIMIENTO EN UNA DIMENSIÓN-->
+
+
+
+<!-- MOVIMIENTO EN DOS DIMENSIONES-->
+<div id="movimiento2" class="bidimensional">
+<a href="javascript:mostrarycerrardiv('movimiento2dimensiones',3);">
+<h1>MOVIMIENTO EN DOS DIMENSIONES</h1></a>
+</div>
+<div id="movimiento2dimensiones" style="display:none " class="contenido">
+
+<a href="Movimiento_dos_dimensiones/MovBidimensionalConAceleracionConstante.html"target="mainFrame" class="bidimensional_color">•Movimiento en dos dimensiones con aceleración constante</a><br />
+
+<a href="Movimiento_dos_dimensiones/MovimintoDosDimensiones.html" target="mainFrame" class="bidimensional_color">•Movimiento parabólico</a><br />
+<!--<a href="Movimiento_dos_dimensiones/Proyectil.html" target="mainFrame" class="bidimensional_color">Proyectil</a><br />-->
+<a href="Movimiento_dos_dimensiones/MovimientoCircularUniforme.html" target="mainFrame" class="bidimensional_color">•Movimiento circular</a><br />
+<a href="Movimiento_dos_dimensiones/VelocidadAceleracionRelativa.html" target="mainFrame" class="bidimensional_color">•Velocidad y aceleración relativa</a>
+<!--<p class="derecha" > <a href="javascript:cerrart('movimiento2dimensiones');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br><br>
+</div>
+<!-- MOVIMIENTO EN DOS DIMENSIONES-->
+
+
+
+<!-- NEWTON-->
+<div id="lnewton" class="newton">
+<a href="javascript:mostrarycerrardiv('leyNewton',4);">
+<h1>LEYES DE NEWTON</h1></a>
+</div>
+<div id="leyNewton" style="display: none" class="contenido">
+<a href="Newton/Concepto_fuerza.html" target="mainFrame" class="newton_color">•Concepto de fuerza</a><br />
+<a href="Newton/Primeraleynewton.html" target="mainFrame" class="newton_color">•Primera ley de Newton</a><br />
+<a href="Newton/ReferenciaInercial.html" target="mainFrame" class="newton_color">•Referencia inercial</a><br />
+<a href="Newton/Segundaleynewton.html" target="mainFrame" class="newton_color">•Segunda ley de Newton</a><br />
+<a href="Newton/Terceraleynewton.html" target="mainFrame" class="newton_color">•Tercera ley de Newton</a><br />
+<a href="Newton/Aplicacion_leyes_newton.html" target="mainFrame" class="newton_color">•Aplicación leyes de Newton</a><br />
+<a href="Newton/Movimiento_circular_y_tercera_ley.html" target="mainFrame" class="newton_color">•Movimiento circular y segunda ley de Newton</a><br />
+<!--<p class="derecha" > <a href="javascript:cerrart('leyNewton');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br><br>
+</div>	
+<!-- NEWTON-->
+
+
+
+
+<!-- TRABAJO ENERGIA-->
+<div id="Tenergia" class="trabajoEnergia">
+<a href="javascript:mostrarycerrardiv('tyenergia',5);">
+<h1>TRABAJO Y ENERGÍA</h1></a>
+</div>
+<div id="tyenergia" style="display:none " class="contenido">
+
+<a href="Trabajoyenergia/Trabajo.html" target="mainFrame" class="trabajoEnergia_color">•Trabajo</a><br />
+<a href="Trabajoyenergia/Energia_y_cinetica.html" target="mainFrame" class="trabajoEnergia_color">•Energía cinética</a><br />
+<a href="Trabajoyenergia/Potencia.html" target="mainFrame" class="trabajoEnergia_color">•Potencia</a><br />
+<a href="Trabajoyenergia/Energiapotencial.html" target="mainFrame" class="trabajoEnergia_color">•Energía potencial</a><br />
+<a href="Trabajoyenergia/FuerzasConservativas.html" target="mainFrame" class="trabajoEnergia_color">•Fuerzas conservativas y no conservativas</a>
+<!--<p class="derecha" > <a href="javascript:cerrart('tyenergia');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br><br>
+</div>
+<!-- TRABAJO ENERGIA-->
+
+
+
+<!-- MOMENTUM-->
+<div id="MOMENTUM" class="momentum">
+<a href="javascript:mostrarycerrardiv('_momentum',6);">
+<h1>MOMENTUM</h1></a>
+</div>
+<div id="_momentum" style="display:none " class="contenido">
+
+<a href="Momentum/Momentum.html" target="mainFrame" class="momentum_color">•Momentum</a><br />
+
+<!--<p class="derecha" > <a href="javascript:cerrart('momentum');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br>
+</div>
+<!-- MOMENTUM-->
+
+<!-- SEMINARIOS-->
+<div id="SEMINARIOS" class="seminarios">
+<a href="javascript:mostrarycerrardiv('seminarios',7);">
+<h1>SEMINARIOS</h1></a>
+</div>
+<div id="seminarios" style="display:none " class="contenido">
+
+<a href="Seminarios/CalculoDiferencial.html" target="mainFrame" class="seminarios_color">•Cálculo diferencial</a><br />
+<a href="Seminarios/Trigonometriayalgebra.html" target="mainFrame" class="seminarios_color">•Álgebra y trigonometría</a><br />
+<a href="Seminarios/Notacion_cientifica.html" target="mainFrame" class="seminarios_color">•Notación científica</a><br />
+<a href="Seminarios/CalculadoraCientifica.htm" target="mainFrame" class="seminarios_color">•Calculadora científica</a><br />
+<a href="Seminarios/InformeDeLaboratorio.html" target="mainFrame" class="seminarios_color">•Informe de laboratorio</a><br />
+<a href="Seminarios/historia_fisica.html" target="mainFrame" class="seminarios_color">•Historia de la física</a><br />
+<a href="Seminarios/OndasYSonido.html" target="mainFrame" class="seminarios_color">•Ondas y sonido</a><br />
+
+<!--<p class="derecha" > <a href="javascript:cerrart('seminarios');"><img src="close.jpg" title="Cerrar" height="40" width="40" alt="Cerrar" /></a>
+</p>-->
+<br><br>
+</div>
+<!--SEMINARIOS-->
+
+
+
+
+
+</body>
+</html>

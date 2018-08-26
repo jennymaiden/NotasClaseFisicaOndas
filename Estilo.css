@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+#header {
+   ground-color: #F1F1F1;
+    borde backr-bottom: 1px solid #CCCCCC;
+    height: 156px;
+    margin-top: -15px;
+	width:100%;
+}
+#encabezado {
+    /*background-image:url(header.fw.png);
+	background-image: url(../images/fondo_cabeza.jpg);*/
+    cursor: pointer;
+    height: 95px;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: 3px;
+    position: relative;
+    width: 960px;
+}
+h1{
+	font-size:16px;
+	color:#FFF;
+}
+h2{
+	color: #333333;
+    display: block;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 20pt;
+    font-weight: 900;
+    margin-top: 0;
+    
+}
+h3 {
+    color: #666666;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 25pt;
+    font-weight: 900;
+    margin-top: 0;
+	text-align:center;
+}
+.tituloprincipal {
+	color: #5C3AB7;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 25pt;
+	font-weight: 900;
+	margin-top: 0;
+	text-align: center;
+}
+.titulointroduccion {
+	color:  #5C3AB7;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 25pt;
+	font-weight: 900;
+	margin-top: 0;
+	text-align: center;
+}
+.tituloseminarios {
+	color:#0B3B39;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 25pt;
+	font-weight: 900;
+	margin-top: 0;
+	text-align: center;
+}
+.titulounidimensional {
+	color: #FF8000;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 25pt;
+	font-weight: 900;
+	/* [disabled]margin-top: 0; */
+	text-align: center;
+}
+.titulomovimientodosdimensiones {
+    color: #00AEEF;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 25pt;
+    font-weight: 900;
+    margin-top: 0;
+	text-align:center;
+}
+.titulonewton {
+    color: #BF204D;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 25pt;
+    font-weight: 900;
+    margin-top: 0;
+	text-align:center;
+	}
+.titulotrabajoyenergia {
+    color: #910099;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 25pt;
+    font-weight: 900;
+    margin-top: 0;
+	text-align:center;
+	}
+.titulomomentum {
+    color: #66CC33;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 25pt;
+    font-weight: 900;
+    margin-top: 0;
+	text-align:center;
+	}
+h4 {
+    background-color: #66CC33;
+    color: #FFFFFF;
+    font-size: 14pt;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+a {
+	text-decoration:none;
+	/*color:#336699;*/
+}
+p {
+	font-family:font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;;
+	color: #333333;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding-bottom: 0px;
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+ul li{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif !important;
+	font-size:12pt !important;
+}
+ol li{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif !important;
+	font-size:12pt !important;
+}
+.derecha{
+	text-align:right;
+}
+#menu_izq{
+	width:400px;
+}
+
+.h4_introduccion {
+	background-color: #5C3AB7;
+	color: #FFFFFF;
+	font-size: 14pt;
+	font-weight: bolder;
+	padding-left: 4px;
+}
+.h5_seminario {
+	background-color: #0B3B39;
+	color: #FFFFFF;
+	font-size: 9pt;
+	font-weight: bolder;
+	padding-left: 2px;
+}
+.h4_seminario {
+	background-color: #0B3B39;
+	color: #FFFFFF;
+	font-size: 14pt;
+	font-weight: bolder;
+	padding-left: 4px;
+}
+.h4_unidimensional{
+	background-color:#FF8000;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.h4_bidimensional{
+	background-color:#00AEEF;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.h4_newton{
+	background-color:#BF204D;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+
+.h4_trabajoEnergia{
+	background-color:#910099;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.h4_momentum{
+	background-color:#009F00;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.h4_seminarios{
+	background-color:#0B3B39;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+	}
+.introduccion{
+	background-color:#5C3AB7;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.introduccion_color{
+	color:#5C3AB7;	
+}
+.introduccion_color a:hover{
+	color:#3333FF;	
+}
+.unidimensional{
+	background-color:#FF8000;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.unidimensional_color{
+	color:#FF8000;	
+}
+.unidimensional_color a:hover{
+	color:#FF9900;	
+}
+
+.bidimensional{
+	background-color:#00AEEF;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.bidimensional_color{
+	color:#00AEEF;	
+}
+.bidimensional_color a:hover{
+	color:#0066CC;	
+}
+
+
+.newton{
+	background-color:#BF204D;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.newton_color{
+	color:#BF204D;	
+}
+.newton_color a:hover{
+	color:#993300;	
+}
+
+.trabajoEnergia{
+	background-color:#910099;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.trabajoEnergia_color{
+	color:#910099;	
+}
+.trabajoEnergia_color a:hover{
+	color:#990000;	
+}
+
+
+.momentum{
+	background-color:#009F00;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.momentum_color{
+	color:#009F00;	
+}
+.momentum_color a:hover{
+	color:#009900;	
+}
+.seminarios{
+	background-color:#0B3B39;
+	height:30px;
+	padding-left:5px;
+	color:#FFF
+}
+.seminarios_color{
+	color:#0B3B39;
+	}
+.seminarios_color a:hover{
+	color:#0B3B39;	
+	}
+
+
+
+.contenido{
+	margin-top:5px;
+}
+.axs {
+	font-family: Verdana, Geneva, sans-serif;
+}
